@@ -38,7 +38,7 @@ function win(){
 
 function lose(){
     wrongAnswers++;
-    newHTML = "<div class='text-center timer-pause'> Time Remaining: <span class='timer'>" + counter + "</span></div>" + "<div class='text-center'>Wrong! The correct answer was: " + correctAnswer[indexNumber] + "<h2></div>";
+    newHTML = "<div class='text-center timer-pause'> Time Remaining: <span class='timer'>" + counter + "</span></div>" + "<div class='text-center'>Wrong! The correct answer was: " + correctAnswer[indexNumber] + imagesArray[indexNumber]  + "<h2></div>";
     $(".mainArea").html(newHTML);
     setTimeout(wait, 4000);
 }
@@ -49,13 +49,16 @@ function generateQuestion(){
     $(".mainArea").html(newHTML);
 }
 function wait() {
-    if (indexNumber <= 4) {
+    if (indexNumber < 4) {
+        
+        console.log( indexNumber )
         indexNumber++;
         generateQuestion();
         timeCounter();
 
     } 
     else {
+        console.log( "I am in the else block" );
         gameOver();
     }
 }
