@@ -1,7 +1,7 @@
-https://durostorum.github.io/Trivia-Game/#
 
 
-# Trivia-Game
+
+# Trivia-Game     -----------  https://durostorum.github.io/Trivia-Game/# -----------
 
 Trilogy Education Services Full-Stack Web Developer Program
 
